@@ -1,0 +1,85 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>user</title>
+    <link th:href="@{/webjars/bootstrap/3.3.6/dist/css/bootstrap.css}" rel="stylesheet"></link>
+</head>
+<body class="container">
+<br/>
+<h1>添加用户</h1>
+<br/><br/>
+<div class="with:80%">
+    <form class="form-horizontal"   th:action="@{/add}"  method="post">
+        <div class="form-group">
+            <label for="payment" class="col-sm-2 control-label">价格</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="payment"  id="payment" placeholder="payment"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="payment_type" class="col-sm-2 control-label" >类型</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="payment_type" id="payment_type" placeholder="payment_type"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="status" class="col-sm-2 control-label">状态</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="status"  id="status" placeholder="status"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="create_time" class="col-sm-2 control-label">创建日期</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="create_time"  id="create_time" placeholder="create_time"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="update_time" class="col-sm-2 control-label">修改日期</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="update_time"  id="update_time" placeholder="update_time"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="user_id" class="col-sm-2 control-label">用户id</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="user_id"  id="user_id" placeholder="user_id"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="receiver_area_name" class="col-sm-2 control-label">地址</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="receiver_area_name"  id="receiver_area_name" placeholder="receiver_area_name"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="receiver_mobile" class="col-sm-2 control-label">电话</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="receiver_mobile"  id="receiver_mobile" placeholder="receiver_mobile"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="receiver" class="col-sm-2 control-label">名字</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="receiver"  id="receiver" placeholder="receiver"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="seller_id" class="col-sm-2 control-label">商品</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="seller_id"  id="seller_id" placeholder="seller_id"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" value="Submit" class="btn btn-info" />
+                &nbsp; &nbsp; &nbsp;
+                <input type="reset" value="Reset" class="btn btn-info" />
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
